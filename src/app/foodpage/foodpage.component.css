@@ -1,0 +1,46 @@
+.container-fluid{
+  height:870px;
+
+}
+.content{
+  width: 800px;
+  margin-top: 70px;
+  font-size: 20px;
+}
+
+.tags
+{
+  background-color: rgb(252, 188, 158);
+  color: black;
+  font-family: Caveat;
+  font-size: 15px;
+}
+
+.origns
+{
+  background-color: rgb(252, 188, 158);
+  color: black;
+  font-family: Caveat;
+  font-size: 15px;
+}
+#img{
+  border-radius: 60px;
+}
+#price{
+  margin-top: 50px;
+  font-size: 30px;
+}
+#cktm
+{
+  margin-top: 20px;
+  font-size: 25px;
+}
+#name{
+  font-size: 70px;
+}
+
+
+.btn{
+  background-color: rgb(252, 188, 158);
+  width: 250px;
+}

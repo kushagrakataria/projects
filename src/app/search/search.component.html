@@ -1,0 +1,9 @@
+<div class=" cls input-group py-3">
+  <div class=" form-outline border border-dark rounded-5">
+    <input type="search" id="form1" placeholder="Type Here" class="form-control" [(ngModel)]="searchItem" (change)="search()"/>
+    <label class="form-label" for="form1" placeholder="search">{{searchItem}}</label>
+  </div>
+  <button class="btn" type="button" class="btn btn-primary border border-dark" (click)="search()"> Search
+    <i class="fas fa-search"></i>
+  </button>
+</div>

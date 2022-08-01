@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-start p-5">
+
+    <div class="img">
+       <img src="{{food.imageUrl}}" class="mx-5" width="800px" id="img"/>
+    </div>
+
+
+    <div class="content text-left ">
+      <div class="title ">
+        <h1 id="name"><b>{{food.name}}</b></h1>
+      </div>
+        <div class="star rounded-5 align-middle" >
+          <star-rating
+            [value]="food.star"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="40px"
+            [readonly]="true">
+          </star-rating>
+        </div>
+
+        <span *ngFor="let orign of food.origns" class="origns p-1 mx-1 my-1 rounded-5 ">
+          {{orign}}
+        </span> <br>
+        <span *ngFor="let tag of food.tags" class="tags p-1 mx-1 my-1 rounded-5 ">
+          {{tag}}
+        </span>
+
+        <p id="cktm">Time to cook <b>{{food.cookTime}}</b> minutes</p>
+        <p id="price">Price: {{food.price|currency}}</p>
+
+
+        <button type="button" class="btn btn-lg" (click)="addToCart()">Add To Cart</button>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div *ngIf="tags" class="text-center my-2">
+  <div class="">
+
+    <a class="tag p-1 mx-2 rounded-5 hover-overlay ripple shadow-1-strong " *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">{{tag.name}}({{tag.count}})</a>
+
+  </div>
+
+
+</div>

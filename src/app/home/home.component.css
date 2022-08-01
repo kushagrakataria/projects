@@ -1,0 +1,41 @@
+.bg {
+  background-color: #fdc7b21c;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.fav{
+  position: absolute ;
+  right: 10px;
+  bottom: 77px;
+  color: red;
+}
+
+.favorite.not{
+  color: black;
+}
+
+.star{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 8px;
+  height:24px;
+  background-color: rgba(253, 254, 255, 0.288);
+  margin-top: -10px;
+
+
+}
+
+.content{
+  position: relative;
+}
+
+.cards:hover{
+
+  box-shadow: 5px 6px 6px 2px #e9ecef;
+  transform: scale(1.1);
+}
