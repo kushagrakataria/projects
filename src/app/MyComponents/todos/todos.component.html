@@ -1,0 +1,15 @@
+<div class="text-center fs-2 fw-bold p-2 text-light">"Subtracting from your list is as important as adding to it"</div>
+<br>
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+
+
+<div class="container p-5">
+  <div *ngIf="this.todos.length===0; else elseBlock">You are done for the day :)</div>
+<ng-template #elseBlock>
+  <h4>Your Todos</h4>
+  <div *ngFor="let todo of todos">
+    <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)" (todoCheckbox)="toggleTodo($event)"> </app-todo-item>
+  </div>
+</ng-template>
+</div>
+
